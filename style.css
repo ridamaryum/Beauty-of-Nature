@@ -13,6 +13,7 @@
 
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
 }
 
 a{
@@ -30,6 +31,7 @@ a{
 .container {
     max-width: 1200px;
     margin: auto;
+    padding: 0px 8px;
 }
 
 nav{
@@ -139,7 +141,52 @@ nav{
 
 #about img{
     max-width: 100%;
-    height: 280px;
+    height: 300px;
+}
+
+#talk-to-us{
+    background-image: url(./talk-to-us.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    margin-top: 30px;
+}
+
+.talk-to-us-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    gap: 16px;
+    margin-top: 120px;
+    padding: 0px 16px;
+}
+
+.talk-to-us-content h1{
+    color: #2c541d;
+}
+
+.talk-to-us-content p{
+    max-width: 500px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+footer .logo{
+    color: #2c541d;
 }
 
 @media only screen and (max-width: 520px){
@@ -169,7 +216,6 @@ nav{
         transition: all 0.3 ease;
         list-style: none;
     }
-
     nav ul.active{
         margin-right: 0;
     }
@@ -179,4 +225,10 @@ nav{
         padding: 8px 16px;
         text-align: right;
     }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 0;
+    }
 }
+
