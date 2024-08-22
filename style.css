@@ -96,6 +96,50 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
+}
+
+#services{
+    display: flex;
+    margin-top: 120px;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services{
+    width: 300px;
+}
+
+.services img{
+    max-width: 100%;
+    height: 350px;
+    background-size: cover;
+}
+
+#about{
+    display: flex;
+    margin-top: 120px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-content{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-content h1{
+    font-style: 32px;
+    color: #2c541d;
+    text-transform: uppercase;
+}
+
+#about img{
+    max-width: 100%;
+    height: 280px;
 }
 
 @media only screen and (max-width: 520px){
@@ -108,6 +152,9 @@ nav{
     .header-content p{
         font-size: 24px;
     }
+    .menu-btn{
+        display: block;
+    }
     nav ul{
         position: absolute;
         top: 0;
@@ -118,6 +165,13 @@ nav{
         height: 100%;
         align-items: end;
         padding-top: 80px;
+        margin-right: -900px;
+        transition: all 0.3 ease;
+        list-style: none;
+    }
+
+    nav ul.active{
+        margin-right: 0;
     }
     nav li{
         border-bottom: 1px solid #2c541d;
