@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="contact-header">
+      <div class="container">
+        <nav>
+          <div class="logo"><h1>EARTH</h1></div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+          <div class="menu-btn"><img src="./img.jpg/img.svg" /></div>
+        </nav>
+        <div class="header-content">
+          <h1>CONTACT US</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-us" class="container">
+      <form action="#">
+        <h1>Get In Touch</h1>
+
+        
+        <div class="input-boxes">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Phone Number" />
+          <input type="email" name="" id="" placeholder="Email" />
+          <textarea name="message" id="" cols="30" rows="10"></textarea>
+          <Button class="primary-btn">SEND NOW</Button>
+        </div>
+      </form>
+
+      <div class="address">
+        <div class="detailswrapper">
+          <div class="detail">
+            <div class="text"><h6>EMAIL</h6>
+            <P>ridamaryum67@gmail.com</P>
+            </div>
+            <div class="detail">
+              <div class="text"><h6>PHONE NUMBER</h6>
+              <P>+92-3071671204</P>
+              </div>
+              <div class="detail">
+                <div class="text"><h6>ADDRESS</h6>
+                <P>Police Station Road, <br>
+                al-Faisal Town, No#2456</P>
+                </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <!--
+          footer
+        -->
+    <footer>
+      <ul class="footerlinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <h1 class="logo">EARTH</h1>
+      <p>© 2024 Earth. All right reserved.</p>
+    </footer>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
